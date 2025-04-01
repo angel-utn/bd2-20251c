@@ -18,12 +18,13 @@ WHERE IDCategoria = 1 OR IDCategoria = 3 OR IDCategoria = 5;
 
 SELECT * FROM Libros WHERE IDCategoria IN (1, 3, 5);
 
-/* Listar los usuarios cuyo país no sea "ARG" ni "BRA" */
-SELECT * FROM Usuarios WHERE IDPais NOT IN ('ARG', 'BRA');
---SELECT * FROM Usuarios where idpais != 'ARG' AND idpais != 'BRA'
+/* Listar los usuarios cuyo país no sea "AR" ni "BR" */
+SELECT * FROM Usuarios WHERE IDPais NOT IN ('AR', 'BR');
 
-/* Listar los usuarios cuyo país sea "ARG" o "BRA" */
-SELECT * FROM Usuarios WHERE IDPais IN ('ARG', 'BRA');
+-- SELECT * FROM Usuarios where idpais != 'AR' AND idpais != 'BR'
+
+/* Listar los usuarios cuyo país sea "AR" o "BR" */
+SELECT * FROM Usuarios WHERE IDPais IN ('AR', 'BR');
 
 /* Mostrar los libros publicados entre 2000 y 2010 */
 
